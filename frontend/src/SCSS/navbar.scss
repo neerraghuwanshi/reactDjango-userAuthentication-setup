@@ -1,0 +1,68 @@
+@import './variables';
+@import './mixins';
+@import './resets';
+
+.navbarContainer{
+    @include flex;
+    background-color:black;
+    height:8vh;
+}
+h1{
+    height:8vh;
+    background-color:black;
+    color:white;
+    margin:0vh;
+    padding: 2vh 0vh;
+    @include flex;
+
+}
+
+h2{
+    color:white;
+    margin-left: 20px;
+}
+
+.link{
+    text-decoration: none;
+    color:white;
+    padding:10px;
+
+    &:hover{
+        background-color: rgb(0, 140, 255);
+        border-radius: 10%;
+        cursor: pointer;
+    }
+}
+
+.center{
+    margin:0px auto;
+}
+
+.right{
+    margin-left: auto;
+    margin-right:20px;
+}
+
+.left{
+    margin-right:auto;
+    margin-left:20px;
+}
+
+.active{
+    background-color: rgb(0, 140, 255);
+    border-radius: 10%;
+}
+
+.logoutBtn{
+    background-color: black;
+    color:white;
+    font-size:0.8rem;
+    padding:10px;
+}
+
+.logoutBtn:hover{
+    background-color: red;
+    border-radius: 10%;
+}
+
+

@@ -1,0 +1,39 @@
+@import './mixins';
+@import './resets';
+
+.signin{
+    display:block;
+    height:74vh;
+    @include flex;
+
+    form{
+        display:block;
+        width:50%;
+        margin: auto;
+        padding:30px;
+        border-radius: 10px;
+        box-shadow: 0 0 1px 1px rgb(221, 221, 221);
+    }
+
+    input,button{
+        width:100%;
+        text-align: center;
+        margin:20px auto;
+    }
+    label{
+        text-align: center;
+        display:block;
+    }
+}
+
+
+button{
+    color:White;
+    background-color: blue;
+    border-radius:5px;
+
+    &:hover{
+    }
+}
+
+
